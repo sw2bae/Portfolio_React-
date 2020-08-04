@@ -1,29 +1,20 @@
 import React from "react";
-import { Link, Route } from "react-router-dom";
-import Learn from "./Learn";
 
-function Contact(props) {
+
+function Contact() {
   return (
-    <div className="container">
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis molestie urna.
-        Aliquam semper ultrices varius. Aliquam faucibus sit amet magna a ultrices. Aenean
-        pellentesque placerat lacus imperdiet efficitur. In felis nisl, luctus non ante euismod,
-        tincidunt bibendum mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum faucibus. Quisque nec
-        metus vestibulum, egestas massa eu, sollicitudin ipsum. Nulla facilisi. Sed ut erat ligula.
-        Nam tincidunt nunc in nibh dictum ullamcorper. Class aptent taciti sociosqu ad litora
-        torquent per conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at rhoncus.
-        Etiam vel condimentum magna, quis tempor nulla.
-      </p>
-      <Link to={`${props.match.url}/learn`} role="button" className="btn btn-link">
-        Learn More
-      </Link>{" "}
-      <Link to="/contact" role="button" className="btn btn-link">
-        Learn Less
-      </Link>
-      <Route exact path={`${props.match.url}/learn`} component={Learn} />
+    <div className="container text-center">
+      <h1 className="mt-5 mb-5">Contact</h1>
+      <div className="card">
+        <p className="mt-5 mb-5">
+          <a href="mailto:sw2.bae@gmail.com" className="lead text-muted">sw2.bae@gmail.com</a>
+        </p>
+        <p>
+          <a href="https://github.com/sw2bae" target="_blank" className="btn btn-secondary my-2 mr-3 mt-5 mb-5">GitHub</a>
+          <a href="https://www.linkedin.com/in/sang-bae-8a38011a0/" target="_blank"
+            className="btn btn-secondary my-2 mt-5 mb-5">Linkedin</a>
+        </p>
+      </div>
     </div>
   );
 }

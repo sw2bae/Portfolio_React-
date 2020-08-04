@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Survey Creator",
+    "image": "https://i.ibb.co/zVZHhkX/Survey-Creator.png",
+    "github": "https://github.com/sw2bae/prjt02_SurveyCreator",
+    "URL": "https://secret-bayou-54491.herokuapp.com/",
+    "completion": "100% Completed"
+  },
+  {
+    "id": 2,
+    "name": "Note Taker",
+    "image": "https://i.ibb.co/YRzG5qL/notetaker.png",
+    "github": "https://github.com/sw2bae/hw11_NoteTaker",
+    "URL": "https://notetakersangbae.herokuapp.com/",
+    "completion": "100% Completed"
+  },
+  {
+    "id": 3,
+    "name": "Camp-Site-Finder",
+    "image": "https://i.ibb.co/C5nFzvm/campsite-Finder.png",
+    "github": "https://github.com/sw2bae/prjt01_campsite-finder",
+    "URL": "https://sw2bae.github.io/prjt01_campsite-finder/",
+    "completion": "80% Completedd"
+  },
+  {
+    "id": 4,
+    "name": "Weather Dashboard",
+    "image": "https://i.ibb.co/dGhkph9/weather-Dashboard.png",
+    "github": "https://github.com/sw2bae/hw06_Weather-Dashboard",
+    "URL": "https://sw2bae.github.io/hw06_Weather-Dashboard/",
+    "completion": "100% Completed"
+  },
+  {
+    "id": 5,
+    "name": "WorkDay Scheduler",
+    "image": "https://i.ibb.co/h1YfhRC/Work-Day-Scheduler.png",
+    "github": "https://github.com/sw2bae/hw05_WorkDayScheduler",
+    "URL": "https://sw2bae.github.io/hw05_WorkDayScheduler/",
+    "completion": "100% Completed"
+  },
+  {
+    "id": 6,
+    "name": "Employee Directory ",
+    "image": "https://i.ibb.co/vwY542T/Employee-Directory.png",
+    "github": "https://github.com/sw2bae/hw19_React_Employee-Directory",
+    "URL": "https://sw2bae.github.io/hw19_React_Employee-Directory/",
+    "completion": "100% Completed"
+  }
+]

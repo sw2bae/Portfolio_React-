@@ -1,16 +1,27 @@
 import React from "react";
+import Profile from "../../Profile.pdf"
+import { Link, Route } from "react-router-dom";
+import Learn from "./Learn";
 
-function About() {
+function About(props) {
   return (
-    <div className="container">
-      <h1>About Page</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam. Integer gravida dui
-        mauris, ut interdum nunc egestas sed. Aenean sed mollis diam. Nunc aliquet risus ac finibus
-        porta. Nam quis arcu non lectus tincidunt fermentum. Suspendisse aliquet orci porta quam
-        semper imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus in. Sed
-        rhoncus mollis diam, sit amet facilisis lectus blandit at.
+    <div className="container text-center">
+      <h1 className="mt-5 mb-5">Sang Bae</h1>
+      <div className="card">
+        <p className='text-muted mt-5 mb-3'>
+          Full Stack Web Developer / SW QA Engineer
       </p>
+        <p>
+          <a href={Profile} target="_blank" className="btn btn-secondary my-2 mb-3">Resume</a>
+        </p>
+        <Link to={`${props.match.url}/learn`} role="button" className="btn btn-link">
+          More
+      </Link>
+        <Link to="/about" role="button" className="btn btn-link">
+          Hide
+      </Link>
+        <Route exact path={`${props.match.url}/learn`} component={Learn} />
+      </div>
     </div>
   );
 }
