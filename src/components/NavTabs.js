@@ -8,13 +8,13 @@ function NavTabs() {
   return (
     <ul className="nav nav-tabs">
       <li className="nav-item">
-        <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+        <Link to={process.env.PUBLIC_URL + '/'} className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
           Home
         </Link>
       </li>
       <li className="nav-item">
         <Link
-          to="/about"
+          to={process.env.PUBLIC_URL + '/about'}
           className={location.pathname === "/about" ? "nav-link active" : "nav-link"}
         >
           About
@@ -22,7 +22,7 @@ function NavTabs() {
       </li>
       <li className="nav-item">
         <Link
-          to="/projects"
+          to={process.env.PUBLIC_URL + '/projects'}
           className={location.pathname === "/projects" ? "nav-link active" : "nav-link"}
         >
           Projects
@@ -30,7 +30,7 @@ function NavTabs() {
       </li>
       <li className="nav-item">
         <Link
-          to="/contact"
+          to={process.env.PUBLIC_URL + '/contact'}
           className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}
         >
           Contact

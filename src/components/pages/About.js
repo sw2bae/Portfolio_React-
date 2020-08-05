@@ -17,7 +17,7 @@ function About(props) {
         <Link to={`${props.match.url}/learn`} role="button" className="btn btn-link">
           More
       </Link>
-        <Link to="/about" role="button" className="btn btn-link">
+        <Link to={process.env.PUBLIC_URL + '/about'} role="button" className="btn btn-link">
           Hide
       </Link>
         <Route exact path={`${props.match.url}/learn`} component={Learn} />
