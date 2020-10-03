@@ -13,6 +13,7 @@ function App() {
       <div>
         <NavTabs />
         <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+
         <Route path={process.env.PUBLIC_URL + '/about'} component={About} />
         <Route exact path={process.env.PUBLIC_URL + '/projects'} component={Projects} />
         <Route exact path={process.env.PUBLIC_URL + '/contact'} component={Contact} />
